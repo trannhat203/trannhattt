@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Store</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Existing styles */
+        
+        .selected {
+            border: 3px solid #337ab7;
+            transform: scale(1.05);
+        }
+        
+        .thumbnail img {
+            cursor: pointer;
+            transition: transform 0.2s, border 0.2s;
+        }
+        
+        .thumbnail img:hover {
+            transform: scale(1.05);
+        }
+        
+        .contact-us {
+            width: 100%;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            border-top: 1px solid #ddd;
+            border-radius: 0;
+            font-size: 18px;
+            box-sizing: border-box;
+        }
+        
+        .contact-us h4 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .contact-us p {
+            margin-bottom: 20px;
+        }
+        /* New styles for animation */
+        
+        .welcome-section {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Footer styles (if needed) */
+        
+        .footer {
+            padding: 20px 0;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="IMG/LOGO.jpg" alt="Logo" class="logo"></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">NAM</a></li>
+                <li><a href="#">NỮ</a></li>
+                <li><a href="#">TRẺ EM</a></li>
+                <li><a href="#">THỂ THAO</a></li>
+                <li><a href="#">CÁC NHÃN HIỆU</a></li>
+                <li><a href="#" style="color: red;">OUTLET</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Trợ giúp</a></li>
+                <li><a href="#">Trình theo dõi đơn hàng</a></li>
+                <li><a href="#">Đăng ký hội viên</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-heart"></span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container" style="margin-top: 70px;">
+        <div class="jumbotron text-center welcome-section">
+            <h1>Welcome to Shoes Store!</h1>
+            <p>Your one-stop shop for fashion hats.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="IMG/HÌNH 1.jpg" alt="Hat 1">
+                    <div class="caption">
+                        <h3>Shoes 1</h3>
+                        <p>2.700.000đ.</p>
+                        <p><a href="BUY NOW.html" class="btn btn-primary" role="button">Buy Now</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="IMG/MẪU 1.jpg" alt="Hat 2">
+                    <div class="caption">
+                        <h3>Shoes 2</h3>
+                        <p>2.100.000đ.</p>
+                        <p><a href="BUY NOW.html" class="btn btn-primary" role="button">Buy Now</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="IMG/MẪU 2.jpg" alt="Hat 3">
+                    <div class="caption">
+                        <h3>Shoes 3</h3>
+                        <p>2.500.000đ.</p>
+                        <p><a href="BUY NOW.html" class="btn btn-primary" role="button">Buy Now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Us Section -->
+        <div class="row">
+            <div class="col-md-12 about-us">
+                <h2>About Us</h2>
+                <p>Welcome to Bootstrap Store, your number one source for all things fashion. We're dedicated to providing you the very best of our products, with an emphasis on quality, customer service, and uniqueness.</p>
+                <p>Founded in 2024, Bootstrap Store has come a long way from its beginnings in a small office. When we first started out, our passion for fashion drove us to start our own business.</p>
+                <p>We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p>
+                <p>Sincerely,<br>The Bootstrap Store Team</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-us">
+        <div class="container">
+            <h4>Liên Hệ Với Chúng Tôi</h4>
+            <p>Email: support@example.com</p>
+            <p>Điện thoại: +84 123 456 789</p>
+            <p>Địa chỉ: 123 Đường ABC, Quận 1, TP. Hồ Chí Minh</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted text-center">© 2024 Bootstrap Store</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.thumbnail img').click(function() {
+                $('.thumbnail img').removeClass('selected');
+                $(this).addClass('selected');
+            });
+        });
+    </script>
+</body>
+
+</html>
